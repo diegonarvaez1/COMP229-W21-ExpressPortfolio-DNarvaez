@@ -12,6 +12,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
   
+            <!--Home Nav item--> 
             <% if (title == 'Home'){ %>
   
             <li class="nav-item active">
@@ -24,8 +25,8 @@
             <a class="nav-link" aria-current="page" href="/home"><i class="fas fa-lg fa-home"></i> Home</a>
           </li>
   
-  
-          <% if (title == 'About'){ %>
+          <!--About Nav item-->
+          <% if (title == 'About Me'){ %>
   
             <li class="nav-item active">
               
@@ -34,9 +35,37 @@
            <li class="nav-item">
   
             <% } %> 
-            <a class="nav-link" aria-current="page" href="/about"><i class="fas fa-info"></i> About</a>
+            <a class="nav-link" aria-current="page" href="/about"><i class="fas fa-info"></i> About Me</a>
           </li>
+
+
+          <!--Projects Nav item-->
+          <% if (title == 'Projects'){ %>
   
+            <li class="nav-item active">
+              
+            <% }else{ %>
+  
+           <li class="nav-item">
+  
+            <% } %> 
+            <a class="nav-link" aria-current="page" href="/projects"><i class="fas fa-project-diagram"></i> Projects</a>
+          </li>
+
+          <!--Services Nav item-->
+          <% if (title == 'Services'){ %>
+  
+            <li class="nav-item active">
+              
+            <% }else{ %>
+  
+           <li class="nav-item">
+  
+            <% } %> 
+            <a class="nav-link" aria-current="page" href="/services"><i class="fas fa-concierge-bell"></i> Services</a>
+          </li>
+
+          <!--Contact Nav item-->
           <% if (title == 'Contact Me'){ %>
   
             <li class="nav-item active">
