@@ -1,9 +1,13 @@
 {
   "name": "assignment-1",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^12.00.0",
+    "npm": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
@@ -16,5 +20,18 @@
     "jquery": "^3.5.1",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "added engine especifications",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegonarvaez1/COMP229-W21-ExpressPortfolio-DNarvaez.git"
+  },
+  "author": "Diego Narvaez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegonarvaez1/COMP229-W21-ExpressPortfolio-DNarvaez/issues"
+  },
+  "homepage": "https://github.com/diegonarvaez1/COMP229-W21-ExpressPortfolio-DNarvaez#readme"
 }
