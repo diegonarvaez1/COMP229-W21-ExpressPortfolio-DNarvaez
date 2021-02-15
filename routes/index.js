@@ -18,7 +18,7 @@ router.get('/about', function(req, res, next) {
    { title: 'About Me' });
   });
 
-   /* GET products page. */
+   /* GET projects page. */
 router.get('/projects', function(req, res, next) {
   res.render('index',
    { title: 'Projects' });

@@ -87,14 +87,35 @@
   
     <main class="container">
         <div class="jumbotron">
-          <h1 class="display-4">5Welcome to the <%= title %> page!</h1>
+          <h1 class="display-4"> <%= title %> </h1>
     
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">Please leave your contact info below so I can contact you with further information.</p>
           <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+          <!--Contact form-->
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Your Email: </label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="batman@batmail.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Service you are interested in: </label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Web Development</option>
+                <option>App Development</option>
+                <option>Intro to blockchain technology</option>
+                <option>None</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Your Message: </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+          </form>
     
           <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
           </p>
     
         </div>
