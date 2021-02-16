@@ -6,15 +6,66 @@
   
     <main class="container">
         <div class="jumbotron">
-          <h1 class="display-4">1Welcome to the <%= title %> page!</h1>
+          <h1 class="display-4">Howdy! I'm Diego Narvaez!</h1>
     
           <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="my-4">
+          
           <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
     
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
+          
+                <!--Short bio-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-8">
+                        <p>My short bio</p>
+                    </div>
+
+                    <div class="col-4">
+                        <img class="card-img-top" src="/Assets/images/diego-bio.jpg" alt="Diego Narvaez photo thumbnail">
+                    </div>
+
+                  </div>
+                </div>
+
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="/about" role="button">More about Me</a>
+                </p>
+
+            <hr class="my-4">
+
+            
+               
+            <!--My Projects Carousel-->
+            <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 img-fluid" src="/Assets/images/webdesign-thumbnail.jpg" alt="First Project">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h5>Airtime!</h5>
+                            <p>Airtime is a celebrity cameo marketplace.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/Assets/images/webdesign-thumbnail.jpg" alt="Second Project">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h5>Dixie</h5>
+                            <p>Dixie is my blockchain artist name.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/Assets/images/webdesign-thumbnail.jpg" alt="Third project">
+                        </div>
+                </div>
+            
+            </div>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="/projects" role="button">Go to my Projects</a>
+            </p>
+
+
+
     
         </div>
       </main>
