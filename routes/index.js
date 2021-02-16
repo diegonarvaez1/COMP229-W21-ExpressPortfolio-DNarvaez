@@ -35,6 +35,12 @@ router.get('/contact', function(req, res, next) {
   res.render('index',
    { title: 'Contact Me' });
   });
+  
+   /* GET success page. */
+router.get('/success', function(req, res, next) {
+  res.render('index',
+   { title: 'Success' });
+  });
 
 
 module.exports = router;

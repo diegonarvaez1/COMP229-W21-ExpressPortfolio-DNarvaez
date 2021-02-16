@@ -229,10 +229,28 @@
           </form>
     
           <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
+            <a class="btn btn-primary btn-lg" href="/success" role="button">Submit</a>
           </p>
     
         </div>
       </main>
       
     <% } %> 
+
+    <!--if user is in 'Success' page-->
+    <% if (title == 'Success'){ %>
+  
+        <main class="container">
+            <div class="jumbotron">
+              <h1 class="display-4"> <%= title %>! </h1>
+        
+              <p class="lead">Your information was submitted successfully!. I will be in contact with you soon. Thank you.</p>
+
+              <p class="lead">
+                <a class="btn btn-primary btn-lg" href="/home" role="button">Go back to Home</a>
+              </p>
+        
+            </div>
+          </main>
+          
+        <% } %> 
