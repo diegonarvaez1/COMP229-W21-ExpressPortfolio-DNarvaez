@@ -1,46 +1,45 @@
 var express = require('express');
 var router = express.Router();
 
+let indexController = require('../controllers/index');
+
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index',
-   { title: 'Home' });
-  });
+router.get('/', indexController.displayHomePage);
 
-  router.get('/home', function(req, res, next) {
-    res.render('index',
-     { title: 'Home' });
-    });
+/* GET home page. */
+router.get('/home', indexController.displayHomePage);
 
-   /* GET about page. */
-router.get('/about', function(req, res, next) {
-  res.render('index',
-   { title: 'About Me' });
-  });
+/* GET About Me page. */
+router.get('/about', indexController.displayAboutPage);
 
-   /* GET projects page. */
-router.get('/projects', function(req, res, next) {
-  res.render('index',
-   { title: 'Projects' });
-  });
+/* GET Projects page. */
+router.get('/projects', indexController.displayProjectsPage);
 
-   /* GET services page. */
-router.get('/services', function(req, res, next) {
-  res.render('index',
-   { title: 'Services' });
-  });
+/* GET Services page. */
+router.get('/services', indexController.displayServicesPage);
 
-   /* GET contact page. */
-router.get('/contact', function(req, res, next) {
-  res.render('index',
-   { title: 'Contact Me' });
-  });
-  
-   /* GET success page. */
-router.get('/success', function(req, res, next) {
-  res.render('index',
-   { title: 'Success' });
-  });
+/* GET Contact Me page. */
+router.get('/contact', indexController.displayContactPage);
+
+/* GET Success page. */
+router.get('/success', indexController.displaySuccessPage);
+
+
+
+/* GET Route for displaying the Login page */
+router.get('/login', indexController.displayLoginPage);
+
+/* POST Route for processing the Login page */
+router.post('/login', indexController.processLoginPage);
+
+/* GET Route for displaying the Register page */
+router.get('/register', indexController.displayRegisterPage);
+
+/* POST Route for processing the Register page */
+router.post('/register', indexController.processRegisterPage);
+
+/* GET to perform UserLogout */
+router.get('/logout', indexController.performLogout);
 
 
 module.exports = router;
