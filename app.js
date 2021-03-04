@@ -8,11 +8,6 @@ let logger = require('morgan');
 // authentication modules
 let session = require('express-session');
 let passport = require('passport');
-
-
-
-
-
 let passportLocal = require('passport-local');
 let localStrategy = passportLocal.Strategy;
 let flash = require('connect-flash');
