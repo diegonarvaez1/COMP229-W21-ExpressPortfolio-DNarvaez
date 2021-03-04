@@ -100,7 +100,7 @@ module.exports.processLoginPage = (req, res, next) => {
             }, token: authToken});
             */
 
-            return res.redirect('/booklist');
+            return res.redirect('/contactlist');
         });
     })(req, res, next);
 }
@@ -161,7 +161,7 @@ module.exports.processRegisterPage = (req, res, next) => {
             */
 
             return passport.authenticate('local')(req, res, () => {
-                res.redirect('/booklist')
+                res.redirect('/contactlist')
             });
         }
     });
