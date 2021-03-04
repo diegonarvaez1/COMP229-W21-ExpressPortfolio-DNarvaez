@@ -18,15 +18,15 @@
                 <!-- Header Row-->
                 <tr class="d-flex">
                     <% if(typeof displayName == 'string' && displayName) { %>
-                        <th class="text-center col-2">Name</th>
-                        <th class="text-center col-2">Email</th>
-                        <th class="text-center col-1">Number</th>
+                        <th class="text-center col-3">Name</th>
+                        <th class="text-center col-4">Email</th>
+                        <th class="text-center col-3">Number</th>
                         <th class="text-center col-1"></th>
                         <th class="text-center col-1"></th>
                     <% } else { %>
-                        <th class="text-center col-2">Name</th>
-                        <th class="text-center col-2">Email</th>
-                        <th class="text-center col-1">Number</th>
+                        <th class="text-center col">Name</th>
+                        <th class="text-center col">Email</th>
+                        <th class="text-center col">Number</th>
                     <% } %>
                 </tr>
 
@@ -35,9 +35,9 @@
                 <% for(let count = 0; count < ContactList.length; count++) { %>
                     <tr class="d-flex">
                         <% if(typeof displayName == 'string' && displayName) { %>
-                            <td class="text-center col-2"><%= ContactList[count].name %></td>
-                            <td class="text-center col-2"><%= ContactList[count].email %></td>
-                            <td class="text-center col-1"><%= ContactList[count].number %></td>           
+                            <td class="text-center col-3"><%= ContactList[count].name %></td>
+                            <td class="text-center col-4"><%= ContactList[count].email %></td>
+                            <td class="text-center col-3"><%= ContactList[count].number %></td>           
                             <td class="text-center col-1">
                                 <a href="/contactlist/edit/<%= ContactList[count]._id %>" class="btn btn-primary btn-sm">
                                 <i class="fas fa-pencil-alt"></i> Edit</a>
@@ -47,9 +47,9 @@
                                 <i class="fas fa-trash-alt"></i> Delete</a>
                             </td>
                          <% } else { %>
-                            <td class="text-center col-2"><%= ContactList[count].name %></td>
-                            <td class="text-center col-2"><%= ContactList[count].email %></td>
-                            <td class="text-center col-1"><%= ContactList[count].number %></td> 
+                            <td class="text-center col"><%= ContactList[count].name %></td>
+                            <td class="text-center col"><%= ContactList[count].email %></td>
+                            <td class="text-center col"><%= ContactList[count].number %></td> 
                          <% } %>
                     </tr>
                 <% } %>
