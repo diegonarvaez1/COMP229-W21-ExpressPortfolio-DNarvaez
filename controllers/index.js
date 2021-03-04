@@ -87,9 +87,10 @@ module.exports.processLoginPage = (req, res, next) => {
                 email: user.email
             }
 
+            /*
             const authToken = jwt.sign(payload, DB.Secret, {
                 expiresIn: 604800 // 1 week
-            });
+            }); 
 
             /* TODO - Getting Ready to convert to API
             res.json({success: true, msg: 'User Logged in Successfully!', user: {
